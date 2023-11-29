@@ -1,0 +1,142 @@
+.thetable{
+    width: 20em;
+    
+}
+.thetable-2{
+    width: 20em;
+    
+}
+#vertical-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 2px; /* Set the width of the line */
+    background-color: #000; /* Set the color of the line */
+}
+.unique-word-1{
+    color: rgb(139, 151, 215); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(25, 32, 72);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-2{
+    color: rgb(201, 93, 219); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(62, 16, 70);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-3{
+    color: rgb(251, 186, 181); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(113, 13, 6);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-4{
+    color: rgb(229, 229, 229); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(63, 63, 63);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-5{
+    color: rgb(255, 186, 164); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(116, 28, 0);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-6{
+    color: rgb(255, 222, 125); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(105, 79, 0);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-7{
+    color: rgb(232, 239, 163); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(87, 94, 17);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-8{
+    color: rgb(153, 211, 155); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(30, 70, 32);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-9{
+    color: rgb(52, 232, 255); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(0, 75, 85);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-10{
+    color: rgb(151, 206, 249); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(6, 61, 105);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-11{
+    color: rgb(163, 133, 216); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(41, 23, 73);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-12{
+    color: rgb(244, 138, 174); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(96, 9, 39);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-13{
+    color: rgb(155, 176, 186); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(38, 50, 56);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-14{
+    color: rgb(169, 126, 111); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(48, 34, 29);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-15{
+    color: rgb(255, 198, 115); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(102, 61, 0);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-16{
+    color: rgb(255, 249, 200); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(126, 113, 0);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-17{
+    color: rgb(197, 225, 165); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(56, 81, 27);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-18{
+    color: rgb(0, 218, 197); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(0, 60, 54);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-19{
+    color: rgb(139, 151, 215); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(25, 32, 72);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-20{
+    color: rgb(201, 93, 219); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(62, 16, 70);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}
+.unique-word-21{
+    color: rgb(251, 186, 181); /* Set the color for the unique word */
+    -webkit-text-stroke: 1.5px rgb(113, 13, 6);
+    text-shadow: rgb(59, 59, 59) 1px 1px 5px;
+    font-family: 'Vanilla Extract';
+}

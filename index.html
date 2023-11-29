@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shinobi Showdown</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="test.css">
+  <link href="https://fonts.cdnfonts.com/css/ninja-naruto" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/vanilla-extract" rel="stylesheet">
+  <img src="img/logo.png" alt="" class="alogo">
+  <img src="img/shinobi.png" alt="" class="blogo">
+  <style>
+    .thetable {
+    border-collapse: collapse;
+    position: absolute;
+    border-spacing: 20px;
+    margin-left: 10px;
+    top: 230px; /* Adjust the top position as needed */
+    left: 200px; /* Adjust the left position as needed */
+}
+.thetable-2 {
+    border-collapse: collapse;
+    position: absolute;
+    border-spacing: 20px;
+    top: 230px; /* Adjust the top position as needed */
+    right: 200px; /* Adjust the left position as needed */
+}
+        .thetable td {
+            cursor: default;
+            position: relative;
+            padding: 5px; /* Adjust padding as needed */
+            text-align: center; /* Center text within cells */
+            
+            
+        }
+        .thetable-2 td {
+            cursor: default;
+            position: relative;
+            padding: 5px; /* Adjust padding as needed */
+            text-align: center; /* Center text within cells */
+            
+            
+        }
+
+        .edit-input {
+            width: 50px;
+        }
+
+        .vertical-line {
+            position: absolute;
+            height: 13.5cm;
+            width: 4.5px;
+            background-color: #ffffff; /* Adjust line color as needed (e.g., red) */
+            left: 375px;
+            transform: translateX(-50%);
+            top: 282px;
+            border-radius: 1000px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .horizontal-line {
+            position: absolute;
+            width: 7.5cm;
+            height: 4.5px;
+            background-color: #ffffff; /* Adjust line color as needed (e.g., green) */
+            left: 230px;
+            top: 280px;
+            border-radius: 1000px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+      
+
+.vertical-line-2 {
+    position: absolute;
+    height: 13.5cm;
+    width: 4.5px;
+    background-color: #ffffff; /* Adjust line color as needed (e.g., red) */
+    right: 350px;
+    transform: translateX(-50%);
+    top: 282px;
+    border-radius: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.horizontal-line-2 {
+    position: absolute;
+    width: 7.5cm;
+    height: 4.5px;
+    background-color: #ffffff; /* Adjust line color as needed (e.g., green) */
+    right: 220px;
+    top: 280px;
+    border-radius: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+        .eyes{
+            color: white;
+            -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+            text-shadow: black 1px 1px 5px;
+            font-size: 27px;
+        }
+        .e-cell{
+            font-size: 27px;
+        }
+        .unique-word{
+            color: white;
+            -webkit-text-stroke: 1.5px rgb(0, 0, 0); 
+            text-shadow: black 1px 1px 5px;
+            font-family: 'Vanilla Extract';
+        }
+  </style>
+</head>
+<body>
+  
+  <div class="center-container">
+    <div class="circle-container">
+      <iframe src="https://spinthewheel.app/gZzWr9MOOF" width="600" height="600" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <table width="200" height="200" cellspacing="1" class="thetable">
+      <tr>
+          <td colspan="3" align="center" height="30px" onclick="editCell(this, 10)" style="font-family: 'Ninja Naruto'; font-size: 38px; color: white; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px;" class="e-cell">Name</td>
+      </tr>
+      <tr>
+          <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Eyes</td>
+          <td width="10%"></td>
+          <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+          
+      </tr>
+      <tr>
+          <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Jutsu</td>
+          <td width="10%"></td>
+          <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+      </tr>
+      <tr>
+          <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Taijutsu</td>
+          <td width="10%"></td>
+          <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+      </tr>
+      <tr>
+          <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Speed</td>
+          <td width="10%"></td>
+          <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+      </tr>
+      <tr>
+          <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Summon</td>
+          <td width="10%"></td>
+          <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+      </tr>
+      <tr>
+          <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">IQ</td>
+          <td width="10%"></td>
+          <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+      </tr>
+      <tr>
+          <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Chakra</td>
+          <td width="10%"></td>
+          <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+      </tr>
+      <tr>
+          <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Durability</td>
+          <td width="10%"></td>
+          <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+      </tr>
+      <tr>
+          <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Weapon</td>
+          <td width="10%"></td>
+          <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+      </tr>
+  </table>
+
+  <table width="200" height="200" cellspacing="1" class="thetable-2">
+    <tr>
+        <td colspan="3" align="center" height="30px" onclick="editCell(this, 10)" style="font-family: 'Ninja Naruto'; font-size: 38px; color: white; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px;" class="e-cell">Name</td>
+    </tr>
+    <tr>
+        <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Eyes</td>
+        <td width="10%"></td>
+        <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+        
+    </tr>
+    <tr>
+        <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Jutsu</td>
+        <td width="10%"></td>
+        <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+    </tr>
+    <tr>
+        <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Taijutsu</td>
+        <td width="10%"></td>
+        <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+    </tr>
+    <tr>
+        <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Speed</td>
+        <td width="10%"></td>
+        <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+    </tr>
+    <tr>
+        <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Summon</td>
+        <td width="10%"></td>
+        <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+    </tr>
+    <tr>
+        <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">IQ</td>
+        <td width="10%"></td>
+        <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+    </tr>
+    <tr>
+        <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Chakra</td>
+        <td width="10%"></td>
+        <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+    </tr>
+    <tr>
+        <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Durability</td>
+        <td width="10%"></td>
+        <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+    </tr>
+    <tr>
+        <td align="center" style="font-family: 'Vanilla Extract'; color: white;" class="eyes">Weapon</td>
+        <td width="10%"></td>
+        <td align="center" width="40%" onclick="editCell(this, 10)" style="font-family: 'Vanilla Extract'; color: white;" class="e-cell"><span style="color: #ffffff; -webkit-text-stroke: 1.5px rgb(0, 0, 0); text-shadow: black 1px 1px 5px; font-family: 'Vanilla Extract';">-</span></td>
+    </tr>
+</table>
+  <div class="vertical-line"></div>
+  <div class="horizontal-line"></div>
+  <div class="vertical-line-2"></div>
+  <div class="horizontal-line-2"></div>
+  <input type="text" id="inputBox" class="custom-input">
+  <input type="text" id="inputBox" class="custom-input-2">
+  </div>
+  
+  <!-- Chart JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <!-- Chart JS Plugin for displaying text over chart -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
+  <script src="script.js"></script>
+  <script>
+    function editCell(cell, maxLength) {
+            // Add the "editing" class to the cell when in editing mode
+            cell.classList.add('editing');
+
+            // Get the current text content
+            let currentText = cell.textContent;
+
+            // Create an input field
+            let input = document.createElement("input");
+            input.type = "text";
+            input.value = currentText;
+            input.className = "edit-input";
+
+            // Replace the cell content with the input field
+            cell.innerHTML = "";
+            cell.appendChild(input);
+
+            // Focus on the input field
+            input.focus();
+
+            // Attach an event listener to handle the input
+            input.addEventListener("blur", function() {
+                // When the input field loses focus, update the cell content
+                let newText = input.value;
+
+                // Limit the length of the text
+                if (newText.length > maxLength) {
+                    newText = newText.substring(0, maxLength);
+                }
+
+                // Update the cell content
+                cell.textContent = newText;
+
+                if (newText.includes("Sasuke")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Sasuke/gi, '<span class="unique-word-1">Sasuke</span>');
+                }
+                if (newText.includes("Naruto")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Naruto/gi, '<span class="unique-word-2">Naruto</span>');
+                }
+                if (newText.includes("Guy")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Guy/gi, '<span class="unique-word-3">Guy</span>');
+                }
+                if (newText.includes("Orochimaru")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Orochimaru/gi, '<span class="unique-word-4">Orochimaru</span>');
+                }
+                if (newText.includes("Kakashi")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Kakashi/gi, '<span class="unique-word-5">Kakashi</span>');
+                }
+                if (newText.includes("Jiraya")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Jiraya/gi, '<span class="unique-word-6">Jiraya</span>');
+                }
+                if (newText.includes("Nagato")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Nagato/gi, '<span class="unique-word-7">Nagato</span>');
+                }
+                if (newText.includes("Kaguya")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Kaguya/gi, '<span class="unique-word-8">Kaguya</span>');
+                }
+                if (newText.includes("Tobirama")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Tobirama/gi, '<span class="unique-word-9">Tobirama</span>');
+                }
+                if (newText.includes("Hashirama")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Hashirama/gi, '<span class="unique-word-10">Hashirama</span>');
+                }
+                if (newText.includes("Madara")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Madara/gi, '<span class="unique-word-11">Madara</span>');
+                }
+                if (newText.includes("Obito")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Obito/gi, '<span class="unique-word-12">Obito</span>');
+                }
+                if (newText.includes("Hagoromo")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Hagoromo/gi, '<span class="unique-word-13">Hagoromo</span>');
+                }
+                if (newText.includes("Hinata")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Hinata/gi, '<span class="unique-word-14">Hinata</span>');
+                }
+                if (newText.includes("Hidan")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Hidan/gi, '<span class="unique-word-15">Hidan</span>');
+                }
+                if (newText.includes("Kisame")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Kisame/gi, '<span class="unique-word-16">Kisame</span>');
+                }
+                if (newText.includes("Hiruzen")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Hiruzen/gi, '<span class="unique-word-17">Hiruzen</span>');
+                }
+                if (newText.includes("Shisui")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Shisui/gi, '<span class="unique-word-18">Shisui</span>');
+                }
+                if (newText.includes("Itachi")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Itachi/gi, '<span class="unique-word-19">Itachi</span>');
+                }
+                if (newText.includes("Minato")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Minato/gi, '<span class="unique-word-20">Minato</span>');
+                }
+                if (newText.includes("Shikamaru")) {
+                    cell.innerHTML = cell.innerHTML.replace(/Shikamaru/gi, '<span class="unique-word-21">Shikamaru</span>');
+                }
+                if (newText.includes("-")) {
+                    cell.innerHTML = cell.innerHTML.replace(/-/gi, '<span class="unique-word">-</span>');
+                }
+                
+
+                // Remove the "editing" class after updating the content
+                cell.classList.remove('editing');
+              });
+        }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const inputBox = document.querySelector('.custom-input');
+  
+      inputBox.addEventListener('input', function (event) {
+        const inputValue = event.target.value;
+  
+        if (inputValue.includes('5')) {
+          // Trigger confetti effect
+          triggerConfetti();
+        }
+      });
+  
+      function triggerConfetti() {
+        confetti();
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const inputBox = document.querySelector('.custom-input-2');
+  
+      inputBox.addEventListener('input', function (event) {
+        const inputValue = event.target.value;
+  
+        if (inputValue.includes('5')) {
+          // Trigger confetti effect
+          triggerConfetti();
+        }
+      });
+  
+      function triggerConfetti() {
+        confetti();
+      }
+    });
+  </script>
+  
+</body>
+</html>
